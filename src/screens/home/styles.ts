@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
       flex:1,    
       marginTop:10,
       textAlign:'center',
-      backgroundColor:'lightgrey',
+      backgroundColor:'black',
   
     },
     eventDate:{ color:'aqua',
@@ -60,5 +60,10 @@ export const styles = StyleSheet.create({
             width:'100%',
             flexDirection:'row',
             marginTop:36,
+         }, 
+         listEmptyText:{
+          color:'red',
+          fontSize:14,
+          textAlign:'center',
          }
   })

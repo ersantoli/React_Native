@@ -7,7 +7,7 @@ backgroundColor:'#1F1E25',
 alignItems:'center',
 borderRadius:5,
 flexDirection:'row',
- margin:10,
+ margin:6,
  borderColor:'aqua',  
  borderWidth: 2,  
  
