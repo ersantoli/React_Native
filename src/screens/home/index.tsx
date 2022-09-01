@@ -29,9 +29,9 @@ function handleParticipantRemove(name: string){
  
   function sendToGarbage(){
     setParticipants(prevState => prevState.filter(participant => participant != name))
-    setParticipantsNameErased(prevStates=>[...prevStates,participantsName])
-    console.log("Chegou aqui")
-    console.log(`${setParticipantsNameErased}`)// Problema
+    setParticipantsNameErased(prevStates=>[...prevStates,`${name}`])
+    console.log("Lixeira")
+    console.log(participantsNameErased)// Problema
   }
 
 
@@ -47,7 +47,7 @@ function handleParticipantRemove(name: string){
     }
   ]);
   console.log(`removeu! ${name}`);
-  console.log(setParticipantsNameErased)
+  
 }
 
   return(
