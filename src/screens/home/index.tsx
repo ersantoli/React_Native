@@ -1,5 +1,5 @@
 
-import{  Text, View,TextInput,TouchableOpacity, FlatList,Alert } from 'react-native';
+import{  Text, View,TextInput,TouchableOpacity, FlatList,Alert ,Image} from 'react-native';
 import { styles } from './styles';
 import { Participant } from '../../componets/Participant';
 import React, {useState}  from 'react';
@@ -31,7 +31,7 @@ function handleParticipantRemove(name: string){
     setParticipants(prevState => prevState.filter(participant => participant != name))
     setParticipantsNameErased(prevStates=>[...prevStates,`${name}`])
     console.log("Lixeira")
-    console.log(participantsNameErased)// Problema
+    //console.log(participantsNameErased)// Problema
   }
 
 
@@ -49,6 +49,9 @@ function handleParticipantRemove(name: string){
   console.log(`removeu! ${name}`);
   
 }
+function showGarbage(){
+  console.log('conteudo da lixeira '+participantsNameErased)
+}
 
   return(
   <View style={styles.container}> 
@@ -57,11 +60,18 @@ function handleParticipantRemove(name: string){
   <Text style={styles.eventDate}>
   Nome do Evento
   </Text>
+  
 
   <Text style={styles.eventName}>Sexta,3 de Novembro de 2022</Text>
 
 
-
+  <TouchableOpacity style={styles.button} onPress={showGarbage} >
+  <Image style={styles.garbage}
+    
+    
+     source={require('../home/lixeira.png')}/>
+  </TouchableOpacity>
+ 
 <View style=
 {styles.form}>
     

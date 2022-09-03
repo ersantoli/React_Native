@@ -56,6 +56,7 @@ export const styles = StyleSheet.create({
         borderWidth: 2,    
         margin:10,
          },
+        
  form:{
             width:'100%',
             flexDirection:'row',
@@ -65,5 +66,10 @@ export const styles = StyleSheet.create({
           color:'red',
           fontSize:14,
           textAlign:'center',
-         }
+         },
+         garbage:{
+          width:35,
+          height:35,
+          
+           },
   })

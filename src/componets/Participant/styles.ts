@@ -36,4 +36,5 @@ flexDirection:'row',
         borderWidth: 2,    
         margin:10,
          },
+         
 });
